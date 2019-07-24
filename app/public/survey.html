@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <!-- JQuery Link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <title>Friend Finder</title>
   </head>
@@ -37,7 +37,7 @@
         <div class="form-group">
                 <label><h4>Question 1:</h4></label>
                 <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
-                <select class="form-control" id="Q1">
+                <select class="form-control" id="q1">
                         <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -50,7 +50,7 @@
             <div class="form-group">
                 <label><h4>Question 2:</h4></label>
                 <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
-                <select class="form-control" id="Q2">
+                <select class="form-control" id="q2">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -63,7 +63,7 @@
             <div class="form-group">
                 <label><h4>Question 3:</h4></label>
                 <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
-                <select class="form-control" id="Q3">
+                <select class="form-control" id="q3">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -76,7 +76,7 @@
             <div class="form-group">
                 <label><h4>Question 4:</h4></label>
                 <h5>You rarely do something just out of sheer curiosity.</h5>
-                <select class="form-control" id="Q4">
+                <select class="form-control" id="q4">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -89,7 +89,7 @@
             <div class="form-group">
                 <label><h4>Question 5:</h4></label>
                 <h5>People can rarely upset you.</h5>
-                <select class="form-control" id="Q5">
+                <select class="form-control" id="q5">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -102,7 +102,7 @@
             <div class="form-group">
                 <label><h4>Question 6:</h4></label>
                 <h5>It is often difficult for you to relate to other people’s feelings.</h5>
-                <select class="form-control" id="Q6">
+                <select class="form-control" id="q6">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -115,7 +115,7 @@
             <div class="form-group">
                 <label><h4>Question 7:</h4></label>
                 <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
-                <select class="form-control" id="Q7">
+                <select class="form-control" id="q7">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -128,7 +128,7 @@
             <div class="form-group">
                     <label><h4>Question 8:</h4></label>
                     <h5>You rarely get carried away by fantasies and ideas.</h5>
-                    <select class="form-control" id="Q8">
+                    <select class="form-control" id="q8">
                         <option value = ""></option>
                         <option value = "1">1 (Strongly Disagree)</option>
                         <option value = "2">2</option>
@@ -141,7 +141,7 @@
             <div class="form-group">
                 <label><h4>Question 9:</h4></label>
                 <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
-                <select class="form-control" id="Q9">
+                <select class="form-control" id="q9">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -154,7 +154,7 @@
             <div class="form-group">
                 <label><h4>Question 10:</h4></label>
                 <h5>You feel more energetic after spending time with a group of people.</h5>
-                <select class="form-control" id="Q10">
+                <select class="form-control" id="q10">
                     <option value = ""></option>
                     <option value = "1">1 (Strongly Disagree)</option>
                     <option value = "2">2</option>
@@ -164,10 +164,10 @@
                 </select>
                 <hr class="my-4">
             </div>
-        <a class="btn btn-primary btn-lg" id="submit" data-toggle="modal" data-target="#results"><i class="fas fa-check-circle">
+        <a class="btn btn-primary btn-lg" id="submit" data-target="#results"><i class="fas fa-check-circle">
         </i> Submit</i></a>
         <hr class="my-4">
-        
+
     </div>
     <footer class="footer">
         <div class="container">
@@ -176,7 +176,7 @@
     </footer>
 
       <!-- Modal -->
-      <div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- <div class="modal fade" id="results" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -186,21 +186,26 @@
               </button>
             </div>
             <div class="modal-body">
-                <h2 id="match-name"></h2>
-                <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                <h2 id="matchName"></h2>
+                <img id="matchImg"></img>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+
+        <div class="modal fade bd-example-modal-lg" id="results" role="dialog" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <h2 id="matchName"></h2>
+                <img id="matchImg"></img>
+            </div>
+        </div>
+        </div>
     <script src="https://kit.fontawesome.com/8c9eb792cd.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -211,8 +216,48 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script>
 
-    </script>
+    <script type="text/javascript">
+        $("#submit").on("click", function(event) {
+          event.preventDefault();
+
+          function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function() {
+              if ($(this).val() === "") {
+                isValid = false;
+              }
+            });
+            return isValid;
+          }
+          
+          if (validateForm()) {
+            var userData = {
+              name: $("#name").val(),
+              photo: $("#photo").val(),
+              scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+              ]
+            };
+            $.post("/api/friends", userData, function(data) {
+                console.log(data);
+              $("#matchName").text(data.name);
+              $("#matchImg").attr("src", data.photo);
+              $("#results").modal("toggle");
+            });
+          } else {
+            alert("Please answer all questions before submitting.");
+          }
+        });
+      </script>
   </body>
 </html>
