@@ -1,7 +1,5 @@
 # FriendFinder
 
-This is homework 11 for the Northwestern Coding Boot Camp.
-
 This application is essentially a friend pairing service. [**Here**](https://boiling-spire-76629.herokuapp.com/) is the link to the app on heroku.
 
 ## Setup
